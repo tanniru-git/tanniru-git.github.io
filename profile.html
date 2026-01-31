@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile - FlatMateFinder UK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FlatMateFinder UK</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Create Profile</a>
+            <a href="listings.html">Find Flatmates</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Create Your Profile</h2>
+        <form id="profileForm">
+            <label>Name:<input type="text" name="name" required></label>
+            <label>Email:<input type="email" name="email" required></label>
+            <label>Age:<input type="number" name="age" min="18" max="100" required></label>
+            
+            <label>Sleep Schedule:
+                <select name="sleep">
+                    <option>Early</option>
+                    <option>Late</option>
+                    <option>Flexible</option>
+                </select>
+            </label>
+
+            <label>Cleanliness:
+                <select name="cleanliness">
+                    <option>Neat</option>
+                    <option>Moderate</option>
+                    <option>Messy</option>
+                </select>
+            </label>
+
+            <label>Social Habits:
+                <select name="social">
+                    <option>Introvert</option>
+                    <option>Balanced</option>
+                    <option>Extrovert</option>
+                </select>
+            </label>
+
+            <label>Pets:
+                <select name="pets">
+                    <option>None</option>
+                    <option>Cat</option>
+                    <option>Dog</option>
+                    <option>Other</option>
+                </select>
+            </label>
+
+            <label>Budget (£):<input type="number" name="budget" required></label>
+            <label>Move-in Date:<input type="date" name="movein" required></label>
+            <label>City:<input type="text" name="city" required></label>
+
+            <button type="submit">Submit Profile</button>
+        </form>
+
+        <p id="successMsg"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FlatMateFinder UK</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
